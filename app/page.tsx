@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
+import Main from "./Main"
+import SquareList from "./SquareList";
+
+
 export default function Home() {
   return (
-    <div  className=" flex flex-col">
+    <div>
       <Header/>
-      <Content/>
-      <Footer/>
+      <Main/>
+      <SquareList></SquareList>
+    
     </div>
   );
 }
