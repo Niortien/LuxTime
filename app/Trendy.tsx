@@ -9,7 +9,7 @@ export default function Trendy({}: Props) {
  <h1 className='font-bold text-2xl text-center pt-20'>Trending Products</h1>
  <div className='relative left-60 pt-5 '>
   <Image src={img1} alt='' className='h-76 rounded-xl '/>
-  <div className='border w-[300px] h-[270px] bg-gray-100 bg-opacity-75 absolute top-[25] left-8  '>
+  <div className='border w-[300px] h-[270px] bg-gray-100 opacity-0 absolute top-[25] left-8  '>
  <div className='border border-red-500 px-4'>
  <h1>COLLECTION</h1>
  <h2 className='font-bold text-2xl'>Royal Charm</h2>
