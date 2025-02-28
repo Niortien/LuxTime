@@ -7,7 +7,7 @@ import Button from "../ui/Button";
 export default function About() {
   
   return (
-    <div className="px-35 bg-semiwhite py-20">
+    <div className="px-35 py-20">
       <h1 className="text-center font-bold text-2xl">About</h1>
       <div className="flex gap-12 mt-10">
         <div className=" flex flex-col w-[600px] h-[700px] ">

@@ -32,7 +32,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: orange;
 }
 
 /* @media (prefers-color-scheme: dark) {

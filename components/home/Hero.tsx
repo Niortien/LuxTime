@@ -22,7 +22,7 @@ export default function Hero() {
           className="bg-opacity-5 relative h-[400px] w-[250px] mt-[100px] left-[-100px]"
         />
       </div>
-      <div className="absolute z-[-2] top-0 h-[590px] bottom-40 right-0 w-[78%] bg-primary-100 "></div>
+      <div className="absolute z-[-2] top-0 h-[590px] bottom-40 right-0 w-[78%] bg-primary-100"></div>
       <Button />
     </div>
   );
