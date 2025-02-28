@@ -6,7 +6,7 @@ import Button from './Button'
 import img3 from "@/public/Assets/Images/Articles/5980_1AR_001_1fd5e23d-5dde-4b16-8482-f7ae98c4f58f.jpg"
 import img4 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01.jpg"
 import img5 from "@/public/Assets/Images/Articles/5980_1AR_001_1fd5e23d-5dde-4b16-8482-f7ae98c4f58f.jpg"
-import img6 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01.jpg"
+import SquareList from "./SquareList";
 
 export default function () {
   return (
@@ -34,7 +34,21 @@ export default function () {
 <Button/>
     </div>
  </div>
+ <SquareList></SquareList>
+ 
 
-    </div>
+
+ <h1 className='font-bold text-2xl text-center pt-20'>Trending Products</h1>
+ <div className='relative left-20 pt-5'>
+  <Image src={img1} alt='' className='h-76 rounded-xl'/>
+  <div className='border w-[300px] bg-gray-100 bg-opacity-75 absolute top-[25] left-8  '>
+  <h1>Collection</h1>
+ <h2>Royal Charm</h2>
+ <p>Indroducing our news women's <br />Watch collection, which embodies <br />elegance,sophistication and impeccables style</p>
+ <button className='border border-black rounded-xl px-4'>SHOP NOW</button>
+ </div>
+ </div>
+
+     </div>                                                  
   )
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from "./Header";
 import Main from "./Main"
-import SquareList from "./SquareList";
+import Collection from "./Collection";
 
 
 export default function Home() {
@@ -9,7 +9,8 @@ export default function Home() {
     <div>
       <Header/>
       <Main/>
-      <SquareList></SquareList>
+      <Collection></Collection>
+     
     
     </div>
   );
