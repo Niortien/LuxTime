@@ -6,9 +6,7 @@ import img8 from "@/public/Assets/Images/Articles/montre fond noir 3.jpg";
 import img9 from "@/public/Assets/Images/Articles/montre fond noir 4.jpg";
 import img10 from "@/public/Assets/Images/Articles/montre fond noir 5.jpg";
 
-type Props = {};
-
-export default function Collection({}: Props) {
+export default function Collection() {
   return (
     <div className="px-20">
       <p className="font-bold text-2xl text-center">Our Colletion</p>
