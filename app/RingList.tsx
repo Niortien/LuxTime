@@ -11,7 +11,7 @@ export default function RingList() {
             pathi:img1,
             pathi0:"Golden Queen",
             pathi1:"Get 20% off with our code Gold20"
-        }
+        },
         {
             id:2,
             pathi:img2,
@@ -21,7 +21,7 @@ export default function RingList() {
 
     ]
   return (
-    <div>
+    <div className='flex justify-center gap-5  '>
         {
             product.map((props)=> {
                 return <div key={props.id}>
