@@ -7,10 +7,14 @@ import img3 from "@/public/Assets/Images/Articles/5980_1AR_001_1fd5e23d-5dde-4b1
 import img4 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01.jpg"
 import img5 from "@/public/Assets/Images/Articles/5980_1AR_001_1fd5e23d-5dde-4b16-8482-f7ae98c4f58f.jpg"
 import img6 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01.jpg"
-
+import { Montserrat } from 'next/font/google'
+const mont = Montserrat({ subsets: ['latin'] })
 export default function () {
+ 
   return (
+    
     <div className=' px-35'>
+       
       <h1 className='text-center font-bold text-2xl'>About</h1>
     <div className='flex gap-12 mt-10'>
     <div className=' flex flex-col w-[600px] h-[700px] '>
