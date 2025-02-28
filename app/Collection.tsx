@@ -5,7 +5,7 @@ import img7 from "@/public/Assets/Images/Articles/montre fond noir 2.jpg"
 import img8 from "@/public/Assets/Images/Articles/montre fond noir 3.jpg"
 import img9 from "@/public/Assets/Images/Articles/montre fond noir 4.jpg"
 import img10 from "@/public/Assets/Images/Articles/montre fond noir 5.jpg"
-
+import RingList from './RingList'
 type Props = {}
 
 export default function ({}: Props) {
@@ -36,8 +36,8 @@ export default function ({}: Props) {
  <Image src={img10} alt='image10 ' className='w-full h-full object-center'/>
  </div>
  </div>
- 
  </div>
+ <RingList></RingList>
     </div>
   )
 }
