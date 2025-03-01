@@ -1,18 +1,17 @@
-import Image from "next/image";
-import Header from "./Header";
-import Main from "./Main"
-import Collection from "./Collection";
-import Trendy from "./Trendy";
-
+import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
+import Collection from "@/components/home/Collection";
+import Trendy from "@/components/home/Trendy";
+import SquareList from "@/components/home/SquareList";
 
 export default function Home() {
   return (
-    <div>
-      <Header/>
-      <Main/>
-      <Collection></Collection>
-     <Trendy></Trendy>
-    
+    <div className="max-h-auto">
+      <Hero />
+      <About />
+      <SquareList />
+      <Collection />
+      <Trendy />
     </div>
   );
 }

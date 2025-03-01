@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-montserrat: var(--font-montserrat), sans-serif; 
+  --color-primary-50: #efeae5;
+  --color-primary-100: #dfd6ca;
+  --color-primary-200: #cfc1b0;
+  --color-primary-300: #bfac96;
+  --color-primary-400: #af987b;
+  --color-primary-500: #9f8361;
+  --color-primary-600: #8a7356;
+  --color-primary-700: #75624b;
+  --color-primary-800: #605241;
+  --color-primary-900: #605241;
+  --color-black: #202020;
+  --color-semiwhite: #f4f4f4;
+  --font-body: var(--font-body), sans-serif;
+  --font-title: var(--font-title), sans-serif;
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -38,15 +42,5 @@
 } */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
-  @apply font-montserrat
-}
-@font-face {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 200 700;
-  font-display: swap;
-  src: url("https://fonts.google.com/specimen/Montserrat") format("Montserrat");
+  @apply font-body text-foreground bg-background p-0 m-0 box-border;
 }
