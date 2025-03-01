@@ -4,7 +4,7 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-mont: "", sans-serif; 
+  --font-montserrat: var(--font-montserrat), sans-serif; 
 }
 
 /*
@@ -41,6 +41,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+  @apply font-montserrat
 }
 @font-face {
   font-family: Oswald;

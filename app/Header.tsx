@@ -28,12 +28,12 @@ export default function Header() {
 </div>
 <div className='flex justify-between px-[150px] '>
     <div>
-    <h1 className='text-4xl font-bold  mt-[150px] '>Feel the Time. <br />Dedine Your Style. </h1>
+    <h1 className='text-7xl font-bold  mt-[150px] '>Feel the Time. <br />Dedine Your Style. </h1>
     <h2>Luxury in every detail,precision in every tick. </h2>
     </div >
     <Image src={img3} alt='montre1' className='bg-opacity-5 relative h-[400px] w-[250px] mt-[100px] left-[-100px]'/>
 </div>
-<div className=" absolute z-[-2] top-0 h-[590px] bottom-40 right-0 w-[915px] bg-[#F9F5F0] ">
+<div className=" absolute z-[-2] top-0 h-[590px] bottom-40 right-0 w-[78%] bg-[#F9F5F0] ">
 
 </div>
 

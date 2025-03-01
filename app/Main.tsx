@@ -6,14 +6,8 @@ import Button from './Button'
 import img3 from "@/public/Assets/Images/Articles/5980_1AR_001_1fd5e23d-5dde-4b16-8482-f7ae98c4f58f.jpg"
 import img4 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01.jpg"
 import img5 from "@/public/Assets/Images/Articles/5980_1AR_001_1fd5e23d-5dde-4b16-8482-f7ae98c4f58f.jpg"
-<<<<<<< HEAD
-import img6 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01.jpg"
-import { Montserrat } from 'next/font/google'
-const mont = Montserrat({ subsets: ['latin'] })
-=======
 import SquareList from "./SquareList";
 
->>>>>>> 7ca2ff855ad5dce340eceecf1ad4d95eeebd8655
 export default function () {
  
   return (
