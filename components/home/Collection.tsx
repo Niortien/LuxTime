@@ -6,9 +6,7 @@ import img8 from "@/public/Assets/Images/Articles/montre fond noir 3.jpg";
 import img9 from "@/public/Assets/Images/Articles/montre fond noir 4.jpg";
 import img10 from "@/public/Assets/Images/Articles/montre fond noir 5.jpg";
 
-type Props = {};
-
-export default function Collection({}: Props) {
+export default function Collection() {
   return (
     <div className="px-20">
       <p className="font-bold text-2xl text-center">Our Colletion</p>
@@ -22,8 +20,8 @@ export default function Collection({}: Props) {
         </button>
       </div>
 
-      <div className="  flex h-76 mt-10 gap-1 ">
-        <div className=" w-[30%] ">
+      <div className="  flex  h-76 w-[80%] mt-10 ml-25 gap-1  ">
+        <div className=" w-[25%] ">
           <Image
             src={img6}
             alt="image6"
@@ -52,8 +50,7 @@ export default function Collection({}: Props) {
             <Image
               src={img10}
               alt="image10 "
-              className="w-full h-full object-center"
-            />
+              className="w-full h-full object-center"/>
           </div>
         </div>
       </div>
