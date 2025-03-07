@@ -2,7 +2,6 @@ import React from "react";
 import img1 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01-removebg-preview.png";
 import img2 from "@/public/Assets/Images/Articles/326933ch-removebg-preview (1).png";
 import img3 from "@/public/Assets/Images/Articles/26510OR.OO.1220OR.01-removebg-preview.png";
-
 import Squares, { ISquare } from "@/components/ui/Squares";
 
 export default function SquareList() {

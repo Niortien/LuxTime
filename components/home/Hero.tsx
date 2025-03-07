@@ -1,8 +1,9 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import img3 from "@/public/Assets/Images/Articles/326933ch-removebg-preview (1).png";
-import Button from "@/components/ui/Button";
 import Navbar from "@/components/common/Navbar";
+
 
 export default function Hero() {
   return (

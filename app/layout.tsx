@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Montserrat, Raleway } from "next/font/google";
 import "./globals.css";
+<<<<<<< HEAD
 import Footer from "@/components/common/Footer";
+=======
+import { Providers } from "@/providers";
+>>>>>>> origin/laetitia
 
 const montserrat = Montserrat({
   variable: "--font-body",
@@ -28,8 +32,9 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${raleway.variable} antialiased max-w-screen-2xl mx-auto`}
       >
-        {children}
-        <Footer />
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

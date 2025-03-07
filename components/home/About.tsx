@@ -1,8 +1,10 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import img1 from "@/public/Assets/Images/Articles/img2.jpg";
 import img2 from "@/public/Assets/Images/Articles/img1.jpg";
-import Button from "../ui/Button";
+import { Button } from "@/components/ui/Button";
+
 
 export default function About() {
   
@@ -34,9 +36,13 @@ export default function About() {
               do it in style.
             </p>
           </div>
+<<<<<<< HEAD
          <div className="sm:flex hidden">
          <Button  />
          </div>
+=======
+          <Button color="primary">Choose your</Button>
+>>>>>>> origin/laetitia
         </div>
       </div>
     </div>

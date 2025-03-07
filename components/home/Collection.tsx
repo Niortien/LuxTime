@@ -50,8 +50,7 @@ export default function Collection() {
             <Image
               src={img10}
               alt="image10 "
-              className="w-full h-full object-center"
-            />
+              className="w-full h-full object-center"/>
           </div>
         </div>
       </div>

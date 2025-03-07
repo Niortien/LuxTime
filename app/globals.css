@@ -4,25 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary-50: #efeae5;
-  --color-primary-100: #dfd6ca;
-  --color-primary-200: #cfc1b0;
-  --color-primary-300: #bfac96;
-  --color-primary-400: #af987b;
-  --color-primary-500: #9f8361;
-  --color-primary-600: #8a7356;
-  --color-primary-700: #75624b;
-  --color-primary-800: #605241;
-  --color-primary-900: #605241;
-  --color-black: #202020;
-  --color-semiwhite: #f4f4f4;
-  --font-body: var(--font-body), sans-serif;
-  --font-title: var(--font-title), sans-serif;
-}
-
 @layer base {
   *,
   ::after,
@@ -33,16 +14,6 @@
   }
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
-body {
-  @apply font-body text-foreground bg-background p-0 m-0 box-border;
-}
 
 :root {
   --background: oklch(1 0 0);
@@ -51,7 +22,19 @@ body {
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
+  --primary: #9f8361;
+  --primary-50: #efeae5;
+  --primary-100: #dfd6ca;
+  --primary-200: #cfc1b0;
+  --primary-300: #bfac96;
+  --primary-400: #af987b;
+  --primary-500: #9f8361;
+  --primary-600: #8a7356;
+  --primary-700: #75624b;
+  --primary-800: #605241;
+  --primary-900: #605241;
+  --black: #202020;
+  --semiwhite: #f4f4f4;
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
@@ -87,7 +70,19 @@ body {
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.129 0.042 264.695);
   --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.984 0.003 247.858);
+  --primary: #9f8361;
+  --primary-50: #efeae5;
+  --primary-100: #dfd6ca;
+  --primary-200: #cfc1b0;
+  --primary-300: #bfac96;
+  --primary-400: #af987b;
+  --primary-500: #9f8361;
+  --primary-600: #8a7356;
+  --primary-700: #75624b;
+  --primary-800: #605241;
+  --primary-900: #605241;
+  --black: #202020;
+  --semiwhite: #f4f4f4;
   --primary-foreground: oklch(0.208 0.042 265.755);
   --secondary: oklch(0.279 0.041 260.031);
   --secondary-foreground: oklch(0.984 0.003 247.858);
@@ -115,7 +110,7 @@ body {
   --sidebar-ring: oklch(0.446 0.043 257.281);
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -123,6 +118,19 @@ body {
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  --color-black: var(--black);
+  --color-semiwhite: var(--semiwhite);
+  --color-primary-900: var(--primary-900);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
@@ -152,13 +160,17 @@ body {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-body: var(--font-body), sans-serif;
+  --font-title: var(--font-title), sans-serif;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+  
+body {
+  @apply font-body text-foreground bg-background p-0 m-0 box-border;
+}
+
 }

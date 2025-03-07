@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import img1 from "@/public/Assets/Images/Articles/img2.jpg";
-
 import RingList from "./RingList";
+
 export default function Trendy() {
   return (
     <div className="  sm:mt-10">
@@ -26,7 +26,7 @@ export default function Trendy() {
 
         </div>
       </div>
-      <RingList></RingList>
+      <RingList />
     </div>
   );
 }
