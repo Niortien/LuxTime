@@ -36,13 +36,7 @@ export default function About() {
               do it in style.
             </p>
           </div>
-<<<<<<< HEAD
-         <div className="sm:flex hidden">
-         <Button  />
-         </div>
-=======
           <Button color="primary">Choose your</Button>
->>>>>>> origin/laetitia
         </div>
       </div>
     </div>
