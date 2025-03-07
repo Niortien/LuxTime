@@ -1,23 +1,17 @@
-import Image from "next/image";
-import Header from "./Header";
-import Main from "./Main"
-<<<<<<< HEAD
-import SquareList from "./SquareList";
-import { Montserrat } from "next/font/google";
-=======
-import Collection from "./Collection";
-import Trendy from "./Trendy";
+import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
+import Collection from "@/components/home/Collection";
+import Trendy from "@/components/home/Trendy";
+import SquareList from "@/components/home/SquareList";
 
-
->>>>>>> 7ca2ff855ad5dce340eceecf1ad4d95eeebd8655
 export default function Home() {
   return (
-    <div>
-      <Header/>
-      <Main/>
-      <Collection></Collection>
-     <Trendy></Trendy>
-    
+    <div className="max-h-auto">
+      <Hero />
+      <About />
+      <SquareList />
+      <Collection />
+      <Trendy />
     </div>
   );
 }
