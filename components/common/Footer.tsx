@@ -1,3 +1,4 @@
+import { IconBrandFacebook, IconBrandFacebookFilled, IconBrandInstagram, IconBrandX, IconX } from '@tabler/icons-react';
 import React from 'react';
 
 const Footer = () => {
@@ -50,7 +51,7 @@ const Footer = () => {
                     <ul className='gap-3 flex flex-col sm:items-start items-center justify-center '>
                    <li> <a href="">(310) 634-7245</a></li>
                    <li> <a href="">info@LuxTime</a></li>
-                   <li> <a href="">info@LuxTime</a></li>
+                   <li> <a href="" > <IconBrandX color='black' />   <IconBrandInstagram color='black' />  <IconBrandFacebookFilled color='black' />  </a></li>
                    
                     </ul>
                 </div>

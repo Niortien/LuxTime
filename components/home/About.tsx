@@ -7,11 +7,11 @@ import Button from "../ui/Button";
 export default function About() {
   
   return (
-    <div className=" py-5  ">
-      <h1 className="text-center f font-bold text-2xl">About</h1>
+    <div className=" py-5   max-w-screen-2xl mx-auto  sm:mt-10">
+      <h1 className="text-center f font-bold text-2xl sm:mb-5">About</h1>
       <div className="flex gap- mt-10 justify-around  sm:flex-row flex-col">
         <div className=" flex flex-col sm:w-[48%] rounded-2xl    h-[650px] ">
-          <p>
+          <p className="font-ligh ">
             LuxTime is a young.fast-growing company based in the heart of
             London. <br />
             Founded in 2021.LT was born from a passion for redefining the way
@@ -19,7 +19,7 @@ export default function About() {
             see watche - not just as timkeepers,but as bold fashion statements.
           </p>
 
-          <div className="relative  h-[600px] rounded-md overflow-hidden mt-4 ">
+          <div className="relative  h-[600px] w-[88%] rounded-md overflow-hidden mt-4 ">
             <Image src={img1} className="h-full w-full" alt="img1" />
           </div>
         </div>

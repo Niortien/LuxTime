@@ -8,8 +8,8 @@ import img10 from "@/public/Assets/Images/Articles/montre fond noir 5.jpg";
 
 export default function Collection() {
   return (
-    <div className="sm:px-20">
-      <p className="font-bold text-2xl text-center">Our Colletion</p>
+    <div className="sm:px-20 sm:mt-10">
+      <p className="font-bold text-2xl text-center sm:mb-5">Our Colletion</p>
       <div className="flex sm:justify-center sm:gap-8 flex-col sm:flex-row gap-3  sm:mt-10">
         <button className="bg-[#9F8361] rounded-xl px-8 h-9">Men Luxury</button>
         <button className="border-2 border-[#9F8361] rounded-xl px-8 h-9 ">

@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${raleway.variable} antialiased`}
+        className={`${montserrat.variable} ${raleway.variable} antialiased max-w-screen-2xl mx-auto`}
       >
         {children}
         <Footer />
