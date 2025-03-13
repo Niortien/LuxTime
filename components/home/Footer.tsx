@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <div className="mt-20 bg-primary-50 ">
       <div>
-        <div className="flex gap-20 justify-center pt-20 ">
-          <h1 className="text-3xl font-bold ">LuxTime</h1>
+        <div className="flex flex-col justify-center sm:flex-row gap-20 justify-center pt-20 ">
+          <h1 className="text-4xl  sm:text-3xl font-bold ">LuxTime</h1>
           <div>
             <h1>About</h1>
             <p>Design</p>
@@ -36,8 +36,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" border-b-1 border-gray-400 mx-24 mt-10"></div>
-      <p className="ml-24 text-sm mt-3">© 2025 LuxTime.com,Inc,All Rights Reserved.</p>
+      <div className="mx-10 border-b-1 border-gray-400 sm:mx-24 mt-10"></div>
+      <p className="ml-8 sm:ml-24  text-sm mt-3">© 2025 LuxTime.com,Inc,All Rights Reserved.</p>
     </div>
   );
 }
