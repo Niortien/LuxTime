@@ -7,7 +7,7 @@ import img4 from '@/public/Assets/Images/Articles/Montre7.jpg'
 
 export default function Articles() {
   return (
-    <div className='flex gap-10 mt-20 px-40'>
+    <div className='flex sm:gap-10 sm:mt-20 px-40 sm:flex-row flex-col'>
         <div>
             <h1 className='text-2xl'>New Articles</h1>
             <div className='flex gap-4 pt-2'>
