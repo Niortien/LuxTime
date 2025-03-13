@@ -28,7 +28,7 @@ export default function Hero() {
       </div>
       <div className="sm:absolute sm:z-[-2] sm:top-0 sm:h-[590px] sm:bottom-40 sm:right-0 sm:w-[82%] sm:bg-primary-100"></div>
      <div className="w-[20%] sm:ml-10 ml-10 mt-2 ">
-   <Button>coco</Button>
+   <Button>Choose your</Button>
      </div>
     </div>
   );

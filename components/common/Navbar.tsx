@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="border-gray-400 border-2 w-full"></div>
       <div className="border-gray-400 border-2 w-full"></div>
       </div> 
-      <div className="sm:flex bg-semiwhite sm:max-w-xl sm:bg-none max-w-11/12 group-hover:flex sm:h-4 flex-col w-full sm:flex-row  sm:top-0  sm:relative z-[2]   fixed top-4  h-96 justify-around sm:ring-0  sm:shadow-none shadow-2xl rounded-2xl ring-1  hidden sm:gap-0 gap-8  items-center">
+      <div className=" bg-semiwhite sm: sm:flex  sm:max-w-xl  max-w-11/12 group-hover:flex sm:h-4 flex-col w-full sm:flex-row  sm:top-0  sm:relative z-[2]   fixed top-4  h-96 justify-around sm:ring-0  sm:shadow-none shadow-2xl rounded-2xl ring-1  hidden sm:gap-0 gap-8  items-center">
         <a href="">Home</a>
         <a href="">Collection</a>
         <a href="">About</a>
