@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Raleway } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers";
+import Footer from "@/components/home/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-body",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <Footer/>
       </body>
     </html>
   );

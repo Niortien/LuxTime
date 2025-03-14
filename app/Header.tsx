@@ -5,6 +5,7 @@ import img2 from '@/public/Assets/Images/Articles/world-wide-web.png'
 import img3 from'@/public/Assets/Images/Articles/326933ch-removebg-preview (1).png'
 import img4 from'@/public/Assets/Images/Articles/down.png'
 import Button from '@/components/ui/Button'
+import Link from 'next/link'
 
 
 export default function Header() {
@@ -17,7 +18,7 @@ export default function Header() {
 <div className='flex gap-8'>
 <a href="" >Home</a>
 <a href="">Collection</a>
-<a href="">About</a>
+  
 <a href="">Contacts</a>
 </div>
 <h1 className='relative left-[-150px] text-2xl'>LuxTime</h1>

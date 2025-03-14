@@ -1,27 +1,44 @@
-"use client"
-import React, { useState } from 'react';
-import Image from 'next/image';
-import img1 from "@/public/Assets/Images/Articles/img1.jpg";
-import { log } from 'console';
-const Beforefooter = () => {
-    const [liste,setListe]= useState(0) 
-    let nom:string="issa";
+import React from "react";
+import img3 from "@/public/Assets/Images/Articles/Montre6.jpg";
+import img4 from "@/public/Assets/Images/Articles/Montre7.jpg";
+import Image from "next/image";
+import { Button } from "@/components/ui/Button";
+import { Card,CardHeader,CardFooter,CardContent,CardTitle } from "@/components/ui/Card";
 
-    console.log(nom);
-    console.log(liste)
-    
-    return (
-        <div className='border border-amber-400 flex '>
-            
-            <div className='border border-blue-400 '>
-        <Image src={img1} alt={`img1`}/>
-        {liste}
-            </div >
-            <div className='border border-red-400'>
- <button  className='cursor-pointer' onClick={()=> setListe(liste+1)}>increase </button>
-            </div>
+const Beforefooter = () => {
+  return (
+    <div>
+      <div className="border border-red-500 flex sm:gap-5 sm:flex-row flex-col-reverse sm:justify-center gap-12 px-3 sm:px-0 ">
+        <div className="flex gap-4 ">
+          <Image src={img3} alt="Montre6" className="h-80 sm:w-96  rounded-xl" />
+          
         </div>
-    );
-}
+        <div className="borde border-blue-500 sm:w-[45%] sm:p-6 sm:flex-col sm:flex flex sm:gap-3 gap-8 flex-col h-80 " >
+            <h1 className="sm:text-4xl text-3xl">Enjoy 10% off  order- <br /> just for joining us,eh!</h1>
+            <p>Sign up for our newsletter to receive your discount code  and stay updated  on the latest offers! </p>
+
+         <form action="" className="flex justify-between  w-96 gap-3 ">
+
+          <div>
+              <input type="text" className="border-2 border-black rounded-md sm:w-60 sm:p-1.5 p-2.5  " placeholder="Your mail" />
+          </div>
+            <Button className="sm:w-48  sm:bg-primary-400 bg-white sm:text-white text-black border-2 border-black sm:border-none sm:p-1.5 p-5.5  ">Subcrible</Button>
+         </form>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit officia eum nihil dolorum optio sit numquam</p>
+        </div>
+      </div>
+      <Card className="max-w-2xs">
+          <CardHeader>
+            <CardTitle >
+              Union
+            </CardTitle>
+          </CardHeader>
+          <CardContent >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis incidunt inventore doloribus, eligendi veniam natus perferendis autem error dignissimos dicta quis commodi possimus dolore quisquam! Animi voluptatem vel at.
+          </CardContent>
+        </Card>
+    </div>
+  );
+};
 
 export default Beforefooter;

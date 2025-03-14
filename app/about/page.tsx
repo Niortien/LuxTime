@@ -4,6 +4,7 @@ import Marqueescription from './Marqueescription';
 import Timeless from './Timeless';
 import Beforefooter from './Beforefooter';
 import Link from 'next/link';
+import { Card } from '@/components/ui/Card';
 const About = () => {
     return (
         <div>
@@ -12,6 +13,7 @@ const About = () => {
             <Marqueescription/>
             <Timeless/>
             <Beforefooter/>
+            <Card></Card>
         </div>
     );
 }

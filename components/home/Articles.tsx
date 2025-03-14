@@ -9,7 +9,7 @@ export default function Articles() {
   return (
     <div className='flex flex-col sm:flex-row gap-10 mt-20 sm:px-40'>
         <div>
-            <h1 className='text-3xl text-center font-bold  sm:text-2xl font-bold sm:mr-56'>New Articles</h1>
+            <h1 className='text-3xl text-center   sm:text-2xl font-bold sm:mr-56'>New Articles</h1>
             <div className='flex gap-4 pt-2'>
                 <Image src={img1} alt='Montre4' className='h-40 w-30 rounded-xl object-cover'/>
                 <div>
