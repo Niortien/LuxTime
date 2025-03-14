@@ -4,7 +4,6 @@ import img2 from "@/public/Assets/Images/House/Modern Open-Concept Living with I
 import img3 from "@/public/Assets/Images/House/Décoration salon moderne - Silia Studio.jpg";
 import img1 from "@/public/Assets/Images/House/téléchargement (1).jpg";
 import img4 from "@/public/Assets/Images/House/téléchargement.jpg";
-import { div } from 'framer-motion/client';
 const HouseList = () => {
     const housse: IHouse[] = [
         {

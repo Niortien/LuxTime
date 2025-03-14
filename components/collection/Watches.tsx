@@ -1,6 +1,4 @@
-import WatchsList from "@/components/home/WatchsList";
 import React from "react";
-import SortList from "./SortList";
 
 export default function Watches() {
   return (
@@ -10,7 +8,6 @@ export default function Watches() {
         <div className="border-2 border-red-500">
           <h1 className="font-bold">Brands</h1>
         </div>
-      
       </div>
     </div>
   );

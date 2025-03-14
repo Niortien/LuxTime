@@ -1,9 +1,7 @@
 import React from "react";
 import img3 from "@/public/Assets/Images/Articles/Montre6.jpg";
-import img4 from "@/public/Assets/Images/Articles/Montre7.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-import { Card,CardHeader,CardFooter,CardContent,CardTitle } from "@/components/ui/Card";
 
 const Beforefooter = () => {
   return (
@@ -27,16 +25,6 @@ const Beforefooter = () => {
          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit officia eum nihil dolorum optio sit numquam</p>
         </div>
       </div>
-      <Card className="max-w-2xs">
-          <CardHeader>
-            <CardTitle >
-              Union
-            </CardTitle>
-          </CardHeader>
-          <CardContent >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis incidunt inventore doloribus, eligendi veniam natus perferendis autem error dignissimos dicta quis commodi possimus dolore quisquam! Animi voluptatem vel at.
-          </CardContent>
-        </Card>
     </div>
   );
 };

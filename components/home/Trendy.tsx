@@ -15,7 +15,7 @@ export default function Trendy() {
           <div className="absolute z-[2] px-4 ">
           <span className="">COLLECTION</span>
           <h1 className="text-2xl font-title font-bold">Royal Charm</h1>
-          <p>Introducing our  new women's watch collection ,whitch embodies elegance, sophistication
+          <p>Introducing our  new women&apos;s watch collection ,whitch embodies elegance, sophistication
             and impeccable style
           </p>
           <button className="border-1 w-40 py-2 px-2 rounded-2xl shadow-2xs ">

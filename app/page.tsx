@@ -3,9 +3,8 @@ import About from "@/components/home/About"
 import Collection from "@/components/home/Collection";
 import Trendy from "@/components/home/Trendy";
 import Articles from "@/components/home/Articles";
-import Footer from "@/components/home/Footer";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="max-h-auto">
       <Hero />
@@ -13,7 +12,6 @@ export default function Home() {
       <Collection />
       <Trendy />
       <Articles/>
-      <Footer/>
     </div>
   );
 }

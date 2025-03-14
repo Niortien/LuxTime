@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { Suspense } from "react";
+import Content from "./content";
+import Loading from "../loading";
 
-export default function Contact() {
+export default async function Contact() {
   return (
-    <div> Contact</div>
-  )
+    <Suspense fallback={<Loading />}>
+      <Content />
+    </Suspense>
+  );
 }
