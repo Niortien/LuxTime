@@ -33,7 +33,7 @@ const WatchList = () => {
         {
             id: 5,
             pathi: img1,
-            marque: "Panerai",
+            marque: "",
         }
         ,
         {
