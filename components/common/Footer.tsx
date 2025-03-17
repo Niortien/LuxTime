@@ -1,63 +1,43 @@
-import { IconBrandFacebook, IconBrandFacebookFilled, IconBrandInstagram, IconBrandX, IconX } from '@tabler/icons-react';
-import React from 'react';
 
-const Footer = () => {
-    return (
-        <footer className='flex  flex-col sm:flex-row  sm:justify-between bg-primary-50 sm:mt-10 mt-5 max-w-screen-xl mx-auto  '>
-            <div className=" h-10 sm:mt-10" >
-                <h1 className='font-title text-4xl'>LuxTime</h1>
-            </div>
-            <div className=" px-10">
-                <h1 className='font-title text-xl font-bold sm:text-start text-center '>About</h1>
-                <div className='  sm:w-48 h-48 '>
-                    <ul className='gap-3 flex flex-col items-center  justify-center  sm:items-start '>
-                   <li> <a href="">Design</a></li>
-                   <li> <a href="">Stores</a></li>
-                   <li> <a href="">Careers</a></li>
-                    <li><a href="">Become a partner</a></li>
-                    <li><a href=""></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div className="">
-            <h1 className='font-title text-xl font-bold sm:text-start text-center '>Collection</h1>
-                <div className='  sm:w-48 h-48'>
-                    <ul  className=' gap-3 flex flex-col items-center justify-center   sm:items-start'>
-                   <li> <a href="">Watch</a></li>
-                   <li> <a href="">Gift boxes</a></li>
-                   <li> <a href="">Gift guide </a></li>
-                    
-                    </ul>
-                </div>
+import React from "react";
 
-            </div>
-            <div className="">
 
-            <h1 className='font-title text-xl font-bold  sm:text-start text-center '>Support</h1>
-                <div className=' sm:w-56 h-48 px'>
-                    <ul className='gap-3 flex flex-col items-center justify-center  sm:items-start '>
-                   <li> <a href="">Privacy policy</a></li>
-                   <li> <a href="">Customer service </a></li>
-                   <li> <a href="">Careers</a></li>
-                    <li><a href="">Terms and condition </a></li>
-                    <li><a href="">Frquently asked questions </a></li>
-                    </ul>
-                </div>
-            </div>
-            <div className="">
 
-            <h1 className='font-title text-xl font-bold sm:text-start text-center '>Contact</h1>
-                <div className=' sm:w-48 h-48'>
-                    <ul className='gap-3 flex flex-col sm:items-start items-center justify-center '>
-                   <li> <a href="">(310) 634-7245</a></li>
-                   <li> <a href="">info@LuxTime</a></li>
-                   <li> <a href="" > <IconBrandX color='black' />   <IconBrandInstagram color='black' />  <IconBrandFacebookFilled color='black' />  </a></li>
-                   
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    );
+export default function Footer() {
+  return (
+    <div className="mt-20 bg-primary-50 ">
+      <div>
+        <div className="flex flex-col justify-center sm:flex-row gap-20 justify-center pt-20 ">
+          <h1 className="text-4xl  sm:text-3xl font-bold ">LuxTime</h1>
+          <div>
+            <h1>About</h1>
+            <p>Design</p>
+            <p>Stores</p>
+            <p>Careers</p>
+            <p>Become a patner</p>
+          </div>
+          <div>
+            <h1>Collection</h1>
+            <p>Watch</p>
+            <p>Gitf boxes</p>
+            <p>Gitf guide</p>
+          </div>
+          <div>
+            <h1>Support</h1>
+            <p>Privacy policy</p>
+            <p>Customer service</p>
+            <p>Teams and Conditions</p>
+            <p>Frequently asked questions</p>
+          </div>
+          <div>
+            <h1>Contacts</h1>
+            <p>(310) 634-7245</p>
+            <p>Info@LuxTime</p>
+          </div>
+        </div>
+      </div>
+      <div className="mx-10 border-b-1 border-gray-400 sm:mx-24 mt-10"></div>
+      <p className="ml-8 sm:ml-24  text-sm mt-3">© 2025 LuxTime.com,Inc,All Rights Reserved.</p>
+    </div>
+  );
 }
-
-export default Footer;

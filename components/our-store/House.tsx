@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/Button';
  }
 const House = ({ id, pathi, marque, dateHouse, telephone }:IHouse) => {
     return (
-        <div className='flex  sm:flex-col flex-col  rounded-2xl   sm:justify-center sm:items-center sm:px-0 px-2 pt-5 sm:gap-0 gap-3 '>
+        <div key={id} className='flex  sm:flex-col flex-col  rounded-2xl   sm:justify-center sm:items-center sm:px-0 px-2 pt-5 sm:gap-0 gap-3 '>
             <div className='sm:h-56 w-[100%] sm:w-[60%] h-56'>
             <Image src={pathi}  alt='iss'className='w-full h-full rounded-2xl object-cover ' />
             </div>

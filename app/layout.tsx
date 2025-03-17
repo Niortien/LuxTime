@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { Montserrat, Raleway } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers";
-import Footer from "@/components/home/Footer";
+import Footer from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
 
 const montserrat = Montserrat({
   variable: "--font-body",
   subsets: ["latin"],
 });
-
 
 const raleway = Raleway({
   variable: "--font-title",
@@ -30,9 +30,10 @@ export default function RootLayout({
         className={`${montserrat.variable} ${raleway.variable} antialiased max-w-screen-2xl mx-auto`}
       >
         <Providers>
+          <Navbar />
           {children}
+          <Footer />
         </Providers>
-        <Footer/>
       </body>
     </html>
   );

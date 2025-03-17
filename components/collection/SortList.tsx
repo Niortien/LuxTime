@@ -10,7 +10,7 @@ import Sort7 from './Sort7'
 export default function SortList() {
   return (
     <div>
-        <div className='flex flex-col gap-5'>
+        <div className='hidden sm:flex flex-col gap-25'>
         <Sort1/>
         <Sort2/>
         <Sort3/>
