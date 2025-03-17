@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import useContent from "./useContent";
 import { Button } from "@/components/ui/Button";
@@ -7,6 +8,9 @@ import { Input } from "@/components/ui/input";
 export default function Content() {
   const { count, handleChangeCount, message, handleChangeSearchParams, q } =
     useContent();
+  const leatitia = process.env.NEXT_PUBLIC_LAETITIA ?? "value n'existe pas";
+  console.log(leatitia);
+
   return (
     <div>
       <p> Contact {count}</p>
