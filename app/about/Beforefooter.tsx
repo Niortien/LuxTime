@@ -1,14 +1,12 @@
 import React from "react";
 import img3 from "@/public/Assets/Images/Articles/Montre6.jpg";
-import img4 from "@/public/Assets/Images/Articles/Montre7.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-import { Card,CardHeader,CardFooter,CardContent,CardTitle } from "@/components/ui/Card";
 
 const Beforefooter = () => {
   return (
     <div>
-      <div className="border border-red-500 flex sm:gap-5 sm:flex-row flex-col-reverse sm:justify-center gap-12 px-3 sm:px-0 ">
+      <div className=" flex sm:gap-5 sm:flex-row flex-col-reverse sm:justify-center gap-12 px-3 sm:px-0 ">
         <div className="flex gap-4 ">
           <Image src={img3} alt="Montre6" className="h-80 sm:w-96  rounded-xl" />
           
@@ -27,16 +25,6 @@ const Beforefooter = () => {
          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit officia eum nihil dolorum optio sit numquam</p>
         </div>
       </div>
-      <Card className="max-w-2xs">
-          <CardHeader>
-            <CardTitle >
-              Union
-            </CardTitle>
-          </CardHeader>
-          <CardContent >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis incidunt inventore doloribus, eligendi veniam natus perferendis autem error dignissimos dicta quis commodi possimus dolore quisquam! Animi voluptatem vel at.
-          </CardContent>
-        </Card>
     </div>
   );
 };

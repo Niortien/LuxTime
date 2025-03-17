@@ -1,13 +1,13 @@
-import React from 'react'
-import Navbar from '@/components/common/Navbar';
-import Watches from '@/app/collection/Watches';
-import SortList from './SortList';
+import React from "react";
+import SortList from "@/components/collection/SortList";
+import Watches from "@/components/collection/Watches";
 
-export default function Collection() {
+export default async function Collection() {
   return (
-    <div>
-          <Navbar/>
-      <div className='flex sm:gap-10'> <SortList/> <Watches/></div>
-    </div>
-  )
+    <>
+      <div className="flex sm:gap-10">
+        <SortList /> <Watches />
+      </div>
+    </>
+  );
 }

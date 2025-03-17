@@ -4,8 +4,6 @@ import img1 from '@/public/Assets/Images/Articles/shopping-bag.png'
 import img2 from '@/public/Assets/Images/Articles/world-wide-web.png'
 import img3 from'@/public/Assets/Images/Articles/326933ch-removebg-preview (1).png'
 import img4 from'@/public/Assets/Images/Articles/down.png'
-import Button from '@/components/ui/Button'
-import Link from 'next/link'
 
 
 export default function Header() {
@@ -40,9 +38,6 @@ export default function Header() {
 <div className=" absolute z-[-2] top-0 h-[590px] bottom-40 right-0  border-4 border-red-900 bg-primary-200 ">
 
 </div>
-
-<Button/>
-
 </nav>
 
     </div>
