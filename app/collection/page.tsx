@@ -2,11 +2,21 @@ import React from "react";
 import SortList from "@/components/collection/SortList";
 import Watches from "@/components/collection/Watches";
 
+import { Watch } from "lucide-react";
+import ProductList from "@/components/collection/ProductList";
 export default async function Collection() {
   return (
     <>
-      <div className="flex sm:gap-10">
-        <SortList /> <Watches />
+      <div className="">
+        <Watches />
+        <div className="flex gap-10 mx-30">
+          <SortList />
+          <div>
+         <ProductList/>
+          </div>
+         
+          
+        </div>
       </div>
     </>
   );
