@@ -1,11 +1,15 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import img1 from "@/public/Assets/Images/Articles/shopping-bag.png";
 import img2 from "@/public/Assets/Images/Articles/world-wide-web.png";
 import img4 from "@/public/Assets/Images/Articles/down.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const routeur=useRouter()
+  const handlclick= ()=> routeur.push("/panier")
   return (
     <nav className="flex justify-around items-center pt-2 max-w-screen-2xl group relative  ">
       <div className=" group h-10 sm:w-[70%]  w-10  fixed  overflow-hidden   top-0 flex items-center z-10 flex-col justify-between rounded-sm bg-semiwhite left-3 ring ring-black sm:hidden">
@@ -25,8 +29,8 @@ export default function Navbar() {
         LuxTime
       </h1>
       <div className="flex gap-2  ">
-        <div className="sm:flex hidden ">
-          <Image src={img1} alt="iconshooping" className="h-6 w-6" />
+        <div className="sm:flex hidden " onClick={handlclick}>
+        <Image src={img1} alt="iconshooping" className="h-6 w-6" />
           <Image src={img2} alt="iconworldweb" className="h-4 w-4 mt-1" />
         </div>
         <div className="flex gap-1 self-end">
