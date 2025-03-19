@@ -1,6 +1,7 @@
+"use client"
 import React from 'react';
 
-const Enjoys = () => {
+const Content = () => {
     return (
         <div>
             
@@ -8,4 +9,4 @@ const Enjoys = () => {
     );
 }
 
-export default Enjoys;
+export default Content;

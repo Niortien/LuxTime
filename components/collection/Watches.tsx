@@ -4,10 +4,20 @@ export default function Watches() {
   return (
     <div>
       <h1 className="text-xl font-bold mt-15 ml-30">Collection Watches</h1>
+      <div className="flex justify-end gap-20 border-2  border-blue-500 ">
+        <label htmlFor="">
+          sort by
+          <select
+            name=""
+            id=""
+            className="border-1 border-gray-300 w-38 h-9 rounded-sm  mr-18"
+          >
+            <option value="">best selling</option>
+          </select>
+        </label>
+      </div>
       <div className="">
-        <div className="border-2 border-red-500">
-          <h1 className="font-bold">Brands</h1>
-        </div>
+
       </div>
     </div>
   );

@@ -4,7 +4,6 @@ import Watches from "@/components/collection/Watches";
 
 import { Watch } from "lucide-react";
 import ProductList from "@/components/collection/ProductList";
-
 export default async function Collection() {
   return (
     <>
