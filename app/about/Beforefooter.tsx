@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 const Beforefooter = () => {
   return (
     <div>
-      <div className="border border-red-500 flex sm:gap-5 sm:flex-row flex-col-reverse sm:justify-center gap-12 px-3 sm:px-0 ">
+      <div className=" flex sm:gap-5 sm:flex-row flex-col-reverse sm:justify-center gap-12 px-3 sm:px-0 ">
         <div className="flex gap-4 ">
           <Image src={img3} alt="Montre6" className="h-80 sm:w-96  rounded-xl" />
           

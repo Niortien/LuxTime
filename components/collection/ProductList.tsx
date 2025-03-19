@@ -22,6 +22,7 @@ export default function ProductList() {
           description: "PowerMatic 80",
           serie: "38mm blue",
           price: "$1,750.00",
+          
         },
         {
           id: 2,

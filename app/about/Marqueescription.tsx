@@ -5,16 +5,21 @@ import Image from "next/image";
 import img1 from "@/public/Assets/Images/Articles/img1.jpg";
 import { Button } from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Marqueescription = () => {
   const router = useRouter();
 
   return (
     <section>
+  <div className=" sm:justify-end flex sm:px-10 py-7">
+  <Link href={"/our-store"} >   <Button>go to aour store
+  </Button> </Link>
+  </div>
       <div className=" sm:flex sm:gap-0 gap-5 flex flex-col sm:flex-row sm:justify-around py-18 sm:px-1  ">
         <div className="sm:w-[45%] sm:px-12 px-10 py-10 ">
           <h1 className="text-4xl sm:px-0 px-1">
-            {" "}
+          
             where Precision Meets Sophistication
           </h1>
           <div className="flex flex-col gap-5 sm:px-0 px-3">
