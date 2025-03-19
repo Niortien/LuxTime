@@ -30,7 +30,7 @@ export default function MyCart() {
         </div>
         </div>
         </div>
-        <div>
+        <div className=''>
           <p>Total</p>
           <p>$15075.00</p>
         </div>
