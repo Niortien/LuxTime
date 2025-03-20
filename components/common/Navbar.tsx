@@ -29,8 +29,8 @@ export default function Navbar() {
       <Link href={"/"} className="text-4xl  sm:relative sm:left-[-150px] sm:flex hidden sm:text-3xl font-bold " >LuxTime</Link>
     
       <div className="flex gap-2  ">
-        <div className="sm:flex hidden focus:bg-primary-200 rounded-sm " onClick={handlclick}>
-        <Image src={img1} alt="iconshooping" className="h-6 w-6 cursor-pointer focus:bg-primary-400 " />
+        <div className="sm:flex hidden " onClick={handlclick}>
+        <Image src={img1} alt="iconshooping" className="h-6 w-6 cursor-pointer focus:bg-primary-300 " />
           <Image src={img2} alt="iconworldweb" className="h-4 w-4 mt-1" />
         </div>
         <div className="flex gap-1 self-end">

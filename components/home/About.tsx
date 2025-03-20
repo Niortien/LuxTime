@@ -3,6 +3,9 @@ import React from "react";
 import Image from "next/image";
 import img1 from "@/public/Assets/Images/Articles/img2.jpg";
 import img2 from "@/public/Assets/Images/Articles/img1.jpg";
+
+import 'primeicons/primeicons.css';
+        
 import { Button } from "@/components/ui/Button";
 
 
@@ -36,7 +39,8 @@ export default function About() {
               do it in style.
             </p>
           </div>
-          <Button color="primary">Choose your</Button>
+          <Button color="primary">Choose your   </Button>
+
         </div>
       </div>
     </div>
