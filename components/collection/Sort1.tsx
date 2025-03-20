@@ -37,6 +37,9 @@ export default function Sort1() {
             <span>(98)</span>
           </label>
         </div>
+        <div className="border bg-gray-400 mt-8">
+
+</div>
         </var>
       </div>
     </div>

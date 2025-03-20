@@ -20,17 +20,17 @@ export default function Navbar() {
       </div>
 
       <div className=" sm:flex  sm:max-w-xl  max-w-11/12 group-hover:flex sm:h-4 flex-col w-full sm:flex-row  sm:top-0  sm:relative z-[2]   fixed top-4  h-96 justify-around sm:ring-0  sm:shadow-none shadow-2xl rounded-2xl ring-1  hidden sm:gap-0 gap-8  items-center sm:bg-semiwhite">
-        <Link href="/">Home</Link>
-        <Link href="/collection">Collection</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contacts</Link>
+        <Link className="focus:bg-primary-200 rounded-sm p-2" href="/">Home</Link>
+        <Link className="focus:bg-primary-200 rounded-sm p-2" href="/collection">Collection</Link>
+        <Link className="focus:bg-primary-200 rounded-sm p-2" href="/about">About</Link>
+        <Link className="focus:bg-primary-200 rounded-sm p-2" href="/contact">Contacts</Link>
       </div>
-      <h1 className="sm:relative sm:left-[-150px] sm:flex hidden   sm:text-2xl">
-        LuxTime
-      </h1>
+     
+      <Link href={"/"} className="text-4xl  sm:relative sm:left-[-150px] sm:flex hidden sm:text-3xl font-bold " >LuxTime</Link>
+    
       <div className="flex gap-2  ">
-        <div className="sm:flex hidden " onClick={handlclick}>
-        <Image src={img1} alt="iconshooping" className="h-6 w-6" />
+        <div className="sm:flex hidden focus:bg-primary-200 rounded-sm " onClick={handlclick}>
+        <Image src={img1} alt="iconshooping" className="h-6 w-6 cursor-pointer focus:bg-primary-400 " />
           <Image src={img2} alt="iconworldweb" className="h-4 w-4 mt-1" />
         </div>
         <div className="flex gap-1 self-end">
