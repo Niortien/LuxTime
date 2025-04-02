@@ -39,7 +39,7 @@ export default function About() {
               do it in style.
             </p>
           </div>
-          <Button color="primary">Choose your   </Button>
+          <Button color="primary" className=" hover:-translate-y-1">Choose your   </Button>
 
         </div>
       </div>

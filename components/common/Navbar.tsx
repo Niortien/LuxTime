@@ -12,14 +12,14 @@ export default function Navbar() {
   const handlclick= ()=> routeur.push("/panier")
   return (
     <nav className="flex justify-around items-center pt-2 max-w-screen-2xl group relative  ">
-      <div className=" group h-10 sm:w-[70%]  w-10  fixed  overflow-hidden   top-0 flex items-center z-10 flex-col justify-between rounded-sm bg-semiwhite left-3 ring ring-black sm:hidden">
+      <div className=" group h-10 sm:w-[70%] transition duration-[2s,10s] ease-in-out w-10  fixed  overflow-hidden   top-0 flex items-center z-10 flex-col justify-between rounded-sm bg-semiwhite left-3 ring ring-black sm:hidden">
         <div className="border-gray-400 border-2 w-full "></div>
         <div className="border-gray-400 border-2 w-full"></div>
         <div className="border-gray-400 border-2 w-full"></div>
         
       </div>
 
-      <div className=" sm:flex  sm:max-w-xl  max-w-11/12 group-hover:flex sm:h-4 flex-col w-full sm:flex-row  sm:top-0  sm:relative z-[2]   fixed top-4  h-96 justify-around sm:ring-0  sm:shadow-none shadow-2xl rounded-2xl ring-1  hidden sm:gap-0 gap-8  items-center sm:bg-semiwhite">
+      <div className=" sm:flex  sm:max-w-xl  max-w-11/12   group-hover:flex sm:h-4 flex-col w-full sm:flex-row  sm:top-0  sm:relative z-[2]   fixed top-4  h-96 justify-around sm:ring-0  sm:shadow-none shadow-2xl rounded-2xl ring-1  hidden sm:gap-0 gap-8  items-center sm:bg-semiwhite  ">
         <Link className="focus:bg-primary-200 rounded-sm p-2" href="/">Home</Link>
         <Link className="focus:bg-primary-200 rounded-sm p-2" href="/collection">Collection</Link>
         <Link className="focus:bg-primary-200 rounded-sm p-2" href="/about">About</Link>

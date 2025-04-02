@@ -10,7 +10,7 @@ const Content = () => {
     const handlclick= ()=> routeur.push("/panier")
   return (
     <div>
-      <div className=" sm:flex sm:gap-2.5 pt-10 px-20">
+      <div className=" sm:flex sm:gap-2.5 pt-10 px-20 sm:flex-row flex-col">
         <div className="border border-amber-300 cursor-pointer ">
           <Image src={img8} alt="coco" />
         </div>

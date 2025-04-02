@@ -116,7 +116,7 @@ export default function ProductList() {
       
   return (
     <>
- <div className='flex flex-col justify-start sm:grid grid-row-4grid grid-cols-3 gap-15 '>
+ <div className='flex flex-col justify-center sm:grid grid-row-4grid grid-cols-3 gap-15 border-2 border-red-300  '>
     {article.map((props) => {
              return (
                

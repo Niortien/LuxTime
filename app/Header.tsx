@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div  className='border-4 z-10 border-red-900 relative'>
      
-<nav  className='relative z-10 overflow-hidden'>
+<nav  className='relative z-10 overflow-hidden transition duration-150 ease-in-out'>
   <h1>Je suis </h1>
 <div className='flex justify-around items-center pt-2 '>
 <div className='flex gap-8'>
