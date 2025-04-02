@@ -23,7 +23,6 @@ export default function Navbar() {
         <Link href="/" className="sm:bg-semiwhite ">Home</Link>
         <Link href="/collection"className="sm:bg-semiwhite">Collection</Link>
         <Link href="/about"className="sm:bg-semiwhite">About</Link>
-        <Link href="/contact"className="sm:bg-semiwhite">Contacts</Link>
       </div>
      
       <Link href={"/"} className="text-4xl  sm:relative sm:left-[-150px] sm:flex hidden sm:text-3xl font-bold " >LuxTime</Link>
