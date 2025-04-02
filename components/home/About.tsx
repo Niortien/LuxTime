@@ -3,8 +3,6 @@ import React from "react";
 import Image from "next/image";
 import img1 from "@/public/Assets/Images/Articles/img2.jpg";
 import img2 from "@/public/Assets/Images/Articles/img1.jpg";
-
-import 'primeicons/primeicons.css';
         
 import { Button } from "@/components/ui/Button";
 

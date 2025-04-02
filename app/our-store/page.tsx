@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "@/components/common/Navbar";
 import HouseList from "@/components/our-store/HouseList";
 import Beforefooter from "../about/Beforefooter";
 import Link from "next/link";

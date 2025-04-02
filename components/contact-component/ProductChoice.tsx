@@ -1,12 +1,10 @@
 import Image from 'next/image';
-import React from 'react';
-import img12 from "@/public/Assets/Images/Articles/montre-homme--festina11-removebg-preview.png";
 import { Input } from '../ui/input';
 import { Button } from '../ui/Button';
 import useContent from '@/app/contact/useContent';
 
 const ProductChoice = () => {
-    const{currentImage,handleCangeImage}=useContent()
+    const{currentImage}=useContent()
     return (
         <div className='sm:w-[45%] sm:h-96'>
            <div className='  ' >

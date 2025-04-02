@@ -7,7 +7,7 @@ export default function Trendy() {
   return (
     <div className="  sm:mt-10">
       <h1 className="text-center font-title font-bold text-3xl sm:mb-5">Tending Products</h1>
-      <div className=" sm:w-[88%] sm:ml-20 h-80 mb-5 relative ">
+      <div className=" sm:w-[80%] sm:ml-35 h-80 mb-5 relative ">
         <div className="relative h-80 rounded-2xl overflow-hidden  z-[-10]  ">
           <Image src={img1} alt="img1" className=" w-full h-full object-cover "/>
         </div>
