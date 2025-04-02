@@ -21,15 +21,15 @@ export default function Collection() {
         </button>
       </div>
 
-      <div className="  flex h-76 sm:mt-10 sm:gap-1 gap-1 mt-5   ">
-        <div className=" w-[30%] ">
+      <div className="  flex h-76 sm:mt-10 sm:gap-1 gap-1 mt-5 justify-center  ">
+        <div className=" w-[25%] ">
           <Image
             src={img6}
             alt="image6"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className=" grid grid-cols-3 grid-rows-2 w-[70%] gap-1">
+        <div className=" grid grid-cols-3 grid-rows-2 w-[50%] gap-1">
           <div className="  col-span-2 ">
             <Image
               src={img7}

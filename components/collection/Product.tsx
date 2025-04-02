@@ -1,10 +1,7 @@
 "use client"
-import useContent from '@/app/contact/useContent';
 import Image, { StaticImageData } from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react'
-import { Button } from '../ui/Button';
-import Link from 'next/link';
 
 
 export interface IWatchs {
@@ -17,10 +14,9 @@ export interface IWatchs {
   
 
 }
-const messae=()=>{ alert("issa")}
+
 
 export default function Product( {id,pathi,name,description,serie,price}:IWatchs) {
-  const {handleTranfert,handleCangeImage,handleCangeId}=useContent()
    const router=useRouter()
   const handleClick = () => {
     

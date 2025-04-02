@@ -20,9 +20,9 @@ export default function MyCart() {
         <div className='flex gap-50 border-b'>
         <div className='flex gap-5'>
         <Image src={img1} alt='' className='w-24 h-24 border border-gray-50' />
-        <p className='font-bold'>Rolex-Datejust</p>
+        <p className=''>Rolex-Datejust</p>
         </div>
-        <div className='flex gap-20 '>
+        <div className='flex gap-20 font-bold '>
           <p>$15075.00</p>
           <p className='border border-black w-15 h-fit text-center rounded-sm'>1</p>
           <p>$15075.00</p>
@@ -30,12 +30,13 @@ export default function MyCart() {
         </div>
         </div>
         </div>
-        <div>
+        <div className='flex justify-end mr-40 gap-100 font-bold'>
           <p>Total</p>
           <p>$15075.00</p>
         </div>
-        <div>
-          <Button/>
+        <div className='flex gap-5  justify-end pt-15 mr-40 '>
+        <Button className='w-48'>Udapte Cart</Button>
+        <Button className='w-48'>Check out</Button>
         </div>
     </div>
   )

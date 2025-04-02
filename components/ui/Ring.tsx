@@ -11,8 +11,8 @@ export interface IRing {
 
 export default function Ring({ id, pathi, pathi0, pathi1,pathi2 }: IRing) {
   return (
-    <div className="relative  overflow-hidden   " key={id}>
-      <div className=" relative rounded-2xl    h-50">
+    <div className="relative  overflow-hidden ml-20  " key={id}>
+      <div className=" relative rounded-2xl    h-50 w-[90%] ">
         <Image  src={pathi} alt="img2"className="h-full rounded-2xl  object-center  " />
       </div>
       <div className=" absolute top-12 left-4 text-white h-28 flex gap-2 flex-col">
