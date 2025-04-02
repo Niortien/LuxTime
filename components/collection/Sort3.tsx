@@ -4,7 +4,7 @@ export default function Sort3() {
   return (
     <div>
         <div>
-        <h1 className="font-bold ">Case Diameters <br />(Women's)</h1>
+        <h1 className="font-bold ">Case Diameters <br />(Women&apos;s)</h1>
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">

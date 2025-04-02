@@ -1,10 +1,9 @@
 "use client";
 
 import { StaticImageData } from "next/image";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import img12 from "@/public/Assets/Images/Articles/montre-homme--festina11-removebg-preview.png";
-import { log } from "console";
+
 
 interface TransferData {
   id: number;

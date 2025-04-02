@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
 import useContent from "./useContent";
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/input";
-import { Form, FormItem, FormLabel } from "@/components/ui/form";
-import { Select } from "@/components/ui/select";
-import Paiement from "../collection/[...montre]/page";
 import ProductChoice from "@/components/contact-component/ProductChoice";
 import ProductForm from "@/components/contact-component/ProductForm";
 
