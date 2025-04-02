@@ -25,7 +25,7 @@ export default function Navbar() {
         <Link className="focus:bg-primary-200 rounded-sm p-2" href="/about">About</Link>
         <Link className="focus:bg-primary-200 rounded-sm p-2" href="/contact">Contacts</Link>
       </div>
-     
+    
       <Link href={"/"} className="text-4xl  sm:relative sm:left-[-150px] sm:flex hidden sm:text-3xl font-bold " >LuxTime</Link>
     
       <div className="flex gap-2  ">
