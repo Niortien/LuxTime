@@ -24,7 +24,7 @@ const CartElements = ({ id, name, pathi, price, serie }: Watch) => {
   return (
     // Le panier est composé de 3 parties
 
-    <div className="border border-black shadow-md rounded-md sm:px-4 pt-5">
+    <div className="border border-black shadow-sm rounded-md sm:px-4 pt-10">
       <div className="flex sm:justify-between">
         {" "}
         {/* cette partie est la première partie */}
@@ -70,7 +70,7 @@ const CartElements = ({ id, name, pathi, price, serie }: Watch) => {
         </div>
       </div>
 
-      <div className=" border-2 border-blue-300 ">
+      <div className=" ">
         {" "}
         {/* cette partie est la deuxième partie */}
         <div className="flex justify-end gap-40">
