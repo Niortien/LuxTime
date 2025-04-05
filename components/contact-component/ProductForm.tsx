@@ -5,14 +5,14 @@ import { Input } from '../ui/input';
 const ProductForm = () => {
     return (
         <div>
-               <div className=" w-[60%]">
-        <form action="" className="flex sm:flex-col sm:gap-3 sm:px-10">
+               <div className=" sm:w-[60%] w-[100%] shadow-md">
+        <form action="" className="flex sm:flex-col sm:gap-3 sm:px-10 px-5   flex-col gap-3">
           <div>
-            <label className="text-2xl text-indigo-950 font-bold">Contact</label>
+            <label className="text-2xl text-indigo-950 font-bold text-center">Contact</label>
             <Input type="text" placeholder="Contact" className="border  border-black  p-2" />
           </div>
 
-          <div className="flex sm:gap-2">
+          <div className="flex gap-2">
             <input type="checkbox" name="" id="" />
             <label htmlFor="">Email me with news and offers</label>
           </div>
@@ -80,7 +80,7 @@ const ProductForm = () => {
           <div>
             <label className="text-xl font-body text-indigo-950">Payment</label>
             <p  className="text-gray-400">All transactions are sécure and encrypted.</p>
-            <form action="" className=" flex sm:flex-col sm:gap-2 bg-gray-200">
+            <form action="" className=" flex sm:flex-col sm:gap-2 bg-gray-200 flex-col gap-2">
               <div>
                 <div  className="text-indigo-950 text-end border border-green-300 w-[100%] sm:px-4 text-xl">
                 Visa

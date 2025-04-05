@@ -18,8 +18,8 @@ export default function Product({
   };
 
   return (
-    <div>
-      <div className=" " key={id} onClick={() => handleClick()}>
+    <div className="transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105    rounded-2xl border border-gray-300 ">
+      <div className=" " key={id} onClick={() => handleClick()} >
         <div className="h-60 w-56 bg-gray-200 rounded-md relative  ">
           <Image
             src={pathi}

@@ -8,7 +8,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "PowerMatic 80",
       serie: "38mm blue",
-      price: "$1,750.00",
+      price: 1.7500      
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "Chemin des",
       serie: "Tourelles Automatic",
-      price: "$899.00",
+      price: 4568.00
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ import { Watch } from "@/types/watch";
       name: "Bulova",
       description: "Chemin des",
       serie: "Tourelles",
-      price: "$1,150.00",
+      price: 768.150
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "PowerMatic 80",
       serie: "38mm blue",
-      price: "$1,750.00",
+      price: 7.750
     },
     {
       id: 5,
@@ -44,7 +44,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "Chemin des",
       serie: "Tourelles Automatic",
-      price: "$899.00",
+      price: 9908.00
     },
     {
       id: 6,
@@ -53,7 +53,7 @@ import { Watch } from "@/types/watch";
       name: "Bulova",
       description: "Chemin des",
       serie: "Tourelles",
-      price: "$1,150.00",
+      price: 9.1500
     },
     {
       id: 7,
@@ -62,7 +62,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "PowerMatic 80",
       serie: "38mm blue",
-      price: "$1,750.00",
+      price: 12.750
     },
     {
       id: 8,
@@ -71,7 +71,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "Chemin des",
       serie: "Tourelles Automatic",
-      price: "$899.00",
+      price: 2399.00
     },
     {
       id: 9,
@@ -80,7 +80,7 @@ import { Watch } from "@/types/watch";
       name: "Bulova",
       description: "Chemin des",
       serie: "Tourelles",
-      price: "$1,150.00",
+      price: 1.150
     },
     {
       id: 10,
@@ -89,7 +89,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "PowerMatic 80",
       serie: "38mm blue",
-      price: "$1,750.00",
+      price: 1.750
     },
     {
       id: 11,
@@ -98,7 +98,7 @@ import { Watch } from "@/types/watch";
       name: "Tissot",
       description: "Chemin des",
       serie: "Tourelles Automatic",
-      price: "$899.00",
+      price: 800.00
     },
     {
       id: 12,
@@ -107,6 +107,6 @@ import { Watch } from "@/types/watch";
       name: "Bulova",
       description: "Chemin des",
       serie: "Tourelles",
-      price: "$1,150.00",
+      price: 11.1150
     },
   ];

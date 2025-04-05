@@ -5,10 +5,11 @@ import { watches } from "@/data/watches";
 import NotFound from "@/app/not-found";
 
 interface IProps {
-  params: Promise<{ IDmontre: string }>;
+  params: Promise <{ IDmontre: string }>;
 }
 export default async function Paiement({ params }: IProps) {
   const { IDmontre } = await params;
+  console.log(IDmontre)
   // Data fetching
   // const response = await fetch(`https://api.vercel.app/blog/${IDmontre}`);
   // const watch: Watch[] = await response.json();

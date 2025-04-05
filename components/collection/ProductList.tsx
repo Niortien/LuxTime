@@ -5,7 +5,7 @@ import { Watch } from "@/types/watch";
 export default function ProductList({ watches }: { watches: Watch[] }) {
   return (
     <>
-      <div className="flex flex-col justify-center sm:grid grid-row-4grid grid-cols-3 gap-15 border-2 border-red-300  ">
+      <div className="flex flex-col justify-center sm:grid grid-row-4grid grid-cols-3 gap-15   ">
         {watches.map((props) => {
           return (
             <div key={props.id} className="">

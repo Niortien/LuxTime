@@ -4,11 +4,16 @@ import useContent from "./useContent";
 import ProductChoice from "@/components/contact-component/ProductChoice";
 import ProductForm from "@/components/contact-component/ProductForm";
 
-export default function Content() {
+import { Watch } from "@/types/watch";
 
-    useContent();
+
+export default   function Content({ montre }: { montre: Watch }) {
+  // {contactWatches}:{ watchesTable: Watch[] }
+ 
+
+   
   return (
-    <div className="flex sm:gap-3">
+    <div className="flex sm:gap-3 sm:flex-row flex-col-reverse ">
       {/* <p> Contact {count}</p>
       <p>{message}</p>
       <Button onClick={handleChangeCount}>Modifier</Button>
@@ -18,8 +23,8 @@ export default function Content() {
         onChange={(e) => handleChangeSearchParams(e.target.value)}
       /> */}
 
-   <ProductForm />
-    <ProductChoice/>
+   <ProductForm  />
+    <ProductChoice montre={montre} />
     </div>
   );
 }

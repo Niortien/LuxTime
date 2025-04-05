@@ -4,5 +4,5 @@ export interface Watch {
     name: string;
     description: string;
     serie: string;
-    price: string;
+    price: number;
   }
