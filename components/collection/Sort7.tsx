@@ -8,16 +8,16 @@ export default function Sort7() {
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Tissot</span>
-            <span>(129)</span>
+            <span>Silver</span>
+            <span>(87)</span>
           </label>
         </div>
 
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Longine</span>
-            <span>(51)</span>
+            <span>Black</span>
+            <span>(54)</span>
           </label>
         </div>
 
@@ -25,18 +25,19 @@ export default function Sort7() {
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Bulova</span>
-            <span>(77)</span>
+            <span>White</span>
+            <span>(34)</span>
           </label>
         </div>
 
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Hamilton</span>
-            <span>(98)</span>
+            <span>Blue</span>
+            <span>(20)</span>
           </label>
         </div>
+        
      
       </div>
     </div>

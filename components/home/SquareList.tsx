@@ -29,7 +29,7 @@ export default function SquareList() {
     },
   ];
   return (
-    <div className=" overflow-auto  flex   justify-around pt-15    " >
+    <div className=" overflow-x-auto  flex  justify-around pt-15    " >
       {product.map((items) => {
         return (
           <div key={items.id}>

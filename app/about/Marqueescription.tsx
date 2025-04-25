@@ -6,6 +6,7 @@ import img1 from "@/public/Assets/Images/Articles/img1.jpg";
 import { Button } from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { ArrowBigDownIcon, ArrowBigLeft, ArrowRight } from "lucide-react";
 
 const Marqueescription = () => {
   const router = useRouter();
@@ -13,7 +14,7 @@ const Marqueescription = () => {
   return (
     <section>
   <div className=" sm:justify-end flex sm:px-10 py-7">
-  <Link href={"/our-store"} >   <Button>go to aour store
+  <Link href={"/our-store"} >   <Button>Go to our store <ArrowRight />
   </Button> </Link>
   </div>
       <div className=" sm:flex sm:gap-0 gap-5 flex flex-col sm:flex-row sm:justify-around py-18 sm:px-1  ">
@@ -45,6 +46,7 @@ const Marqueescription = () => {
               vero! Rerum minima aspernatur repellat pariatur totam magni cum?
               Excepturi, Autem illum .
             </p>
+            
           </div>
 
           <Button

@@ -2,22 +2,19 @@
 
 import React from "react";
 import useContent from "./useContent";
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/input";
-import { Form, FormItem, FormLabel } from "@/components/ui/form";
-import { Select } from "@/components/ui/select";
-import Paiement from "../collection/[...montre]/page";
 import ProductChoice from "@/components/contact-component/ProductChoice";
 import ProductForm from "@/components/contact-component/ProductForm";
 
-export default function Content() {
+import { Watch } from "@/types/watch";
 
-    useContent();
-  const leatitia = process.env.NEXT_PUBLIC_LAETITIA ?? "value n'existe pas";
-  console.log(leatitia);
 
+export default   function Content({ montre }: { montre: Watch }) {
+  // {contactWatches}:{ watchesTable: Watch[] }
+ 
+
+   
   return (
-    <div className="flex sm:gap-3">
+    <div className="flex sm:gap-3 sm:flex-row flex-col-reverse ">
       {/* <p> Contact {count}</p>
       <p>{message}</p>
       <Button onClick={handleChangeCount}>Modifier</Button>
@@ -27,8 +24,8 @@ export default function Content() {
         onChange={(e) => handleChangeSearchParams(e.target.value)}
       /> */}
 
-   <ProductForm />
-    <ProductChoice/>
+   <ProductForm  />
+    <ProductChoice montre={montre} />
     </div>
   );
 }

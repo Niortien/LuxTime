@@ -39,7 +39,7 @@ export default function WatchList() {
   ] as IWatch[];
 
   return (
-    <div className="grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-10 gap-5  sm:w-[70%] w-[100%] sm:px-0  px-3">
+    <div className="grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-10 gap-5   sm:w-[70%] w-[100%] sm:px-0  px-3">
       {watchTable.map((items) => {
         return (
           <div key={items.id}>

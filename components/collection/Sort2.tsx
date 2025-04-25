@@ -8,16 +8,16 @@ export default function Sort2() {
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Tissot</span>
-            <span>(129)</span>
+            <span>Mens Watch</span>
+            <span>(118)</span>
           </label>
         </div>
 
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Longine</span>
-            <span>(51)</span>
+            <span>Womens Watch</span>
+            <span>(102)</span>
           </label>
         </div>
 
@@ -25,17 +25,13 @@ export default function Sort2() {
         <div className=" sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Bulova</span>
-            <span>(77)</span>
+            <span>Unisex Watch</span>
+            <span>(58)</span>
           </label>
         </div>
 
-        <div className=" sm:w-60  flex gap-2">
-          <input type="checkbox" name="" id="" />
-          <label htmlFor=" " className=" w-[90%] flex justify-between  ">
-            <span>Hamilton</span>
-            <span>(98)</span>
-          </label>
+        <div className="border bg-gray-400 mt-3">
+
         </div>
      
       </div>

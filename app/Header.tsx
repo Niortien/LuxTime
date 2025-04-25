@@ -1,45 +1,46 @@
-import React from 'react'
-import Image from 'next/image'
-import img1 from '@/public/Assets/Images/Articles/shopping-bag.png'
-import img2 from '@/public/Assets/Images/Articles/world-wide-web.png'
-import img3 from'@/public/Assets/Images/Articles/326933ch-removebg-preview (1).png'
-import img4 from'@/public/Assets/Images/Articles/down.png'
-
+import React from "react";
+import Image from "next/image";
+import img1 from "@/public/Assets/Images/Articles/shopping-bag.png";
+import img2 from "@/public/Assets/Images/Articles/world-wide-web.png";
+import img3 from "@/public/Assets/Images/Articles/326933ch-removebg-preview (1).png";
+import img4 from "@/public/Assets/Images/Articles/down.png";
 
 export default function Header() {
   return (
-    <div  className='border-4 z-10 border-red-900 relative'>
-     
-<nav  className='relative z-10 overflow-hidden'>
-  <h1>Je suis </h1>
-<div className='flex justify-around items-center pt-2 '>
-<div className='flex gap-8'>
-<a href="" >Home</a>
-<a href="">Collection</a>
-  
-<a href="">Contacts</a>
-</div>
-<h1 className='relative left-[-150px] text-2xl'>LuxTime</h1>
-<div className='flex gap-2'>
-<Image src={img1} alt='iconshooping' className='h-6 w-6'/>
-<Image src={img2} alt='iconworldweb' className='h-4 w-4 mt-1'/>
-<p>Eng</p>
-<Image src={img4} alt='icondown' className='h-4 w-4 mt-1'/>
+    <div className="border-4 z-10 border-red-900 relative">
+      <nav className="relative z-10 overflow-hidden transition duration-150 ease-in-out">
+        <h1>Je suis </h1>
+        <div className="flex justify-around items-center pt-2 ">
+          <div className="flex gap-8">
+            <a href="">Home</a>
+            <a href="">Collection</a>
 
-</div>
-</div>
-<div className='flex justify-between px-[150px] '>
-    <div>
-    <h1 className='text-7xl font-bold  mt-[150px] '>Feel the Time. <br />Dedine Your Style. </h1>
-    <h2>Luxury in every detail,precision in every tick. </h2>
-    </div >
-    <Image src={img3} alt='montre1' className='bg-opacity-5 relative h-[400px] w-[250px] mt-[100px] left-[-100px]'/>
-</div>
-<div className=" absolute z-[-2] top-0 h-[590px] bottom-40 right-0  border-4 border-red-900 bg-primary-200 ">
-
-</div>
-</nav>
-
+            <a href="">Contacts</a>
+          </div>
+          <h1 className="relative left-[-150px] text-2xl">LuxTime</h1>
+          <div className="flex gap-2">
+            <Image src={img1} alt="iconshooping" className="h-6 w-6" />
+            <Image src={img2} alt="iconworldweb" className="h-4 w-4 mt-1" />
+            <p>Eng</p>
+            <Image src={img4} alt="icondown" className="h-4 w-4 mt-1" />
+          </div>
+        </div>
+        <div className="flex justify-between px-[150px] ">
+          <div>
+            <h1 className="text-7xl font-bold  mt-[150px] ">
+              Feel the Time. <br />
+              Dedine Your Style.{" "}
+            </h1>
+            <h2>Luxury in every detail,precision in every tick. </h2>
+          </div>
+          <Image
+            src={img3}
+            alt="montre1"
+            className="bg-opacity-5 relative h-[400px] w-[250px] mt-[100px] left-[-100px]"
+          />
+        </div>
+        <div className=" absolute z-[-2] top-0 h-[590px] bottom-40 right-0  border-4 border-red-900 bg-primary-200 "></div>
+      </nav>
     </div>
-  )
+  );
 }

@@ -3,7 +3,7 @@ import React from "react";
 export default function Watches() {
   return (
     <div>
-      <h1 className="text-xl font-bold mt-15 ml-30">Collection Watches</h1>
+      <h1 className=" text-xl font-bold mt-15  ml-30">Collection Watches</h1>
       <div className="flex justify-end gap-20   ">
         <label htmlFor="">
           sort by

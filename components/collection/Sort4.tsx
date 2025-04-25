@@ -8,16 +8,16 @@ export default function Sort4() {
         <div className="sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between ">
-            <span>Tissot</span>
-            <span>(129)</span>
+            <span>Stainless Steel </span>
+            <span>(68)</span>
           </label>
         </div>
 
         <div className="sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between ">
-            <span>Longine</span>
-            <span>(51)</span>
+            <span>Rose Gold</span>
+            <span>(45)</span>
           </label>
         </div>
 
@@ -25,18 +25,39 @@ export default function Sort4() {
         <div className="sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between ">
-            <span>Bulova</span>
-            <span>(77)</span>
+            <span>Leather</span>
+            <span>(28)</span>
           </label>
         </div>
 
         <div className="sm:w-60  flex gap-2">
           <input type="checkbox" name="" id="" />
           <label htmlFor=" " className=" w-[90%] flex justify-between ">
-            <span>Hamilton</span>
-            <span>(98)</span>
+            <span>Titanium</span>
+            <span>(37)</span>
           </label>
         </div>
+
+        <div className="sm:w-60  flex gap-2">
+          <input type="checkbox" name="" id="" />
+          <label htmlFor=" " className=" w-[90%] flex justify-between ">
+            <span>Rubber</span>
+            <span>(89)</span>
+          </label>
+        </div>
+
+        <div className="sm:w-60  flex gap-2">
+          <input type="checkbox" name="" id="" />
+          <label htmlFor=" " className=" w-[90%] flex justify-between ">
+            <span>Grey</span>
+            <span>(24)</span>
+          </label>
+        </div>
+        
+        <div className="border bg-gray-400 mt-8">
+
+</div>
+      
      
       </div>
     </div>
