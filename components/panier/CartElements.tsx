@@ -6,9 +6,12 @@ import { Button } from "../ui/Button";
 import { Watch } from "@/types/watch";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useFinc } from "@/Store/Store";
 
 const CartElements = ({ id, name, pathi, price, serie }: Watch) => {
   const [qty, setQty] = useState(1);
+  const {deleteToCart}=useFinc()
+
  const router = useRouter();
    ;
   const setQuantity = (value: 1 | -1) => {
@@ -20,11 +23,14 @@ const CartElements = ({ id, name, pathi, price, serie }: Watch) => {
   const handleClick = () => {
     router.push(`/contact/${id}`);
   }
+  const handledlete = () => {
+    
+  }
 
   return (
     // Le panier est composé de 3 parties
 
-    <div className="border border-black shadow-sm rounded-md sm:px-4 pt-10">
+    <div className="border shadow-sm rounded-md sm:px-4 pt-10">
       <div className="flex sm:justify-between">
         {" "}
         {/* cette partie est la première partie */}
@@ -63,7 +69,7 @@ const CartElements = ({ id, name, pathi, price, serie }: Watch) => {
         <div className="flex sm:flex-col gap-5">
           <span className="font-bold">Remove</span>
 
-          <span className="px-2 py-2 bg-primary-200 rounded-2xl flex justify-center items-center cursor-pointer">
+          <span className="px-2 py-2 bg-primary-200 rounded-2xl flex justify-center items-center cursor-pointer" onClick={() =>deleteToCart(id)} >
             {" "}
             X{" "}
           </span>

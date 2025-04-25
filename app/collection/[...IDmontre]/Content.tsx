@@ -13,7 +13,10 @@ const Content = ({ watch }: { watch: Watch }) => {
 
   // routeur.push("/panier")
   const {addToCart}=useFinc()
-  const handlclick = () => addToCart(watch) ; 
+  const handlclick = () => {
+    addToCart(watch)
+    alert(`The Watch ${watch.name} has been added to your cart!`);
+  } ; 
 
   return (
     <div className=" flex  sm:justify-center sm:items-center flex-col p-5  mt-10 mb-10 bg-semiwhite">
