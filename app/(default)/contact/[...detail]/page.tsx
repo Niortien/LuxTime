@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import Content from "./content";
-import Loading from "../../loading";
+import Loading from "../../../loading";
 import { Watch } from "@/types/watch";
 import { watches } from "@/data/watches";
 import NotFound from "@/app/not-found";

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Input } from '../ui/input';
 import { Button } from '../ui/Button';
-import useContent from '@/app/contact/[...detail]/useContent';
+import useContent from '@/app/(default)/contact/[...detail]/useContent';
 import { Watch } from '@/types/watch';
 
 const ProductChoice = ({ montre }: { montre: Watch }) => {
