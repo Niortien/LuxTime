@@ -1,5 +1,4 @@
 import React from "react";
-import { watches } from "@/data/watches";
 import { Watch } from "@/types/watch";
 import Content from "./Content";
 
