@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { use, useEffect, useState } from "react";
 import Image from "next/image";
 import img1 from "@/public/Assets/Images/Articles/shopping-bag.png";
 import img2 from "@/public/Assets/Images/Articles/world-wide-web.png";
@@ -10,11 +10,31 @@ import { useFinc } from "@/Store/Store";
 import { MenuIcon, MenuSquare } from "lucide-react";
 import { Button, buttonVariants } from "../ui/Button";
 import { cn } from "@/lib/utils";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { profile } from "@/services/auth/auth.action";
+import { User } from "@/types/user";
 
 export default function Navbar() {
   const routeur = useRouter();
   const handlclick = () => routeur.push("/panier");
   const { cartArray } = useFinc();
+  const [profileData, setProfileData] = useState<User | null>(null);
+  // const profileData = use(profile(token));
+
+  useEffect(() => {
+    const fetchProfile = async () => {
+      if (typeof window !== "undefined") {
+        const token = localStorage.getItem("token") ?? "";
+        const result = await profile(token);
+        if (result.success) {
+          setProfileData(result.data);
+        }
+      }
+    };
+    fetchProfile();
+  }, []);
+
+  console.log(profileData);
   return (
     <nav className="flex justify-around items-center pt-2 max-w-screen-2xl group relative  ">
       <div className=" group h-10 sm:w-[70%]  w-10  fixed  overflow-hidden   top-0  z-10 flex-col   left-3  sm:hidden">
@@ -53,7 +73,6 @@ export default function Navbar() {
               {cartArray.length}
             </div>
           </div>
-
         </div>
         {/* Langue */}
         {/* <div className="flex gap-1 self-end">
@@ -63,9 +82,21 @@ export default function Navbar() {
         </div> */}
         {/* SignIn */}
         <div className="sm:flex hidden">
-          <Button asChild>
-            <Link href="/connexion">Connexion</Link>
-          </Button>
+          {profileData ? (
+            <Avatar>
+              <AvatarImage
+                src={process.env.NEXT_PUBLIC_API_URL +"/"+ profileData.avatar}
+                alt={profileData.first_name}
+              />
+              <AvatarFallback>
+                {profileData.first_name[0] + profileData.last_name[0]}
+              </AvatarFallback>
+            </Avatar>
+          ) : (
+            <Button asChild>
+              <Link href="/connexion">Connexion</Link>
+            </Button>
+          )}
         </div>
       </div>
     </nav>

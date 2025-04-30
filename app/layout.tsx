@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Raleway } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers";
+import { Toaster } from "@/components/ui/sonner"
 
 const montserrat = Montserrat({
   variable: "--font-body",
@@ -29,7 +30,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${raleway.variable} antialiased max-w-screen-2xl mx-auto`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );

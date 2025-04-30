@@ -1,7 +1,6 @@
-// File: app/inscription/page.tsx
-import React from 'react';
-import SignupForm from '@/components/inscription/SignupForm';
-import { WatchIllustration}  from '@/components/inscription/Signillustrator';
+import React from "react";
+import SignupForm from "@/components/inscription/SignupForm";
+import { WatchIllustration } from "@/components/inscription/Signillustrator";
 
 export default function SignupPage() {
   return (
@@ -19,18 +18,22 @@ export default function SignupPage() {
             </div>
             <div className="text-xs mb-16">Simply buy your Future Watch </div>
           </div>
-          
+
           <div className="mb-8">
-            <h1 className="text-3xl font-bold mb-2">Learn more From World's Watch</h1>
-            <h1 className="text-3xl font-bold mb-2">All World's Best Watches</h1>
+            <h1 className="text-3xl font-bold mb-2">
+              Learn more From World's Watch
+            </h1>
+            <h1 className="text-3xl font-bold mb-2">
+              All World's Best Watches
+            </h1>
             <h1 className="text-3xl font-bold mb-2">Be always on TIME</h1>
           </div>
-          
+
           <div className="relative h-64">
             <WatchIllustration />
           </div>
         </div>
-        
+
         {/* Right side with signup form */}
         <div className="w-full md:w-1/2 p-10 flex items-center justify-center">
           <SignupForm />

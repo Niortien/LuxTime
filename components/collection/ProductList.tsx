@@ -11,7 +11,7 @@ export default function ProductList({ watches }: { watches: Watch[] }) {
             <div key={props.id} className="">
               <Product
                 id={props.id}
-                pathi={`${process.env.NEXT_PUBLIC_BASE_URL}/${props.pathi}`}
+                pathi={`${process.env.NEXT_PUBLIC_API_URL}/${props.pathi}`}
                 name={props.name}
                 description={props.description}
                 serie={props.serie}
