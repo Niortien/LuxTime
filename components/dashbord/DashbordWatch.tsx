@@ -1,10 +1,11 @@
 import { Watch } from '@/types/watch';
 import Image from 'next/image';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 
 interface WatchListProps {
   watches: Watch[];
   onEdit: (watch: Watch) => void;
-  onDelete: (id: string) => void;
+  onDelete: (id: number) =>Promise<void> ;
 }
 
 export default function WatchList({ watches, onEdit, onDelete }: WatchListProps) {
@@ -13,7 +14,7 @@ export default function WatchList({ watches, onEdit, onDelete }: WatchListProps)
       <div className="overflow-x-auto">
         <table className="min-w-full">
           <thead className="bg-gray-50">
-            <tr>
+            <tr> 
               <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Watch</th>
               <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Series</th>
               <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
@@ -35,12 +36,15 @@ export default function WatchList({ watches, onEdit, onDelete }: WatchListProps)
                     <div className="flex items-center">
                       <div className="h-10 w-10 flex-shrink-0 bg-gray-200 rounded-full">
                         {watch.pathi ? (
-                          <div className="h-10 w-10 rounded-full overflow-hidden bg-gray-200">
-                            {/* This would be an actual image in a real app */}
-                            <div className="h-full w-full bg-blue-200 flex items-center justify-center text-blue-600 font-bold">
-                              {watch.name.charAt(0)}
-                            </div>
-                          </div>
+                         <Avatar>
+                         <AvatarImage
+                           src={process.env.NEXT_PUBLIC_API_URL +"/"+ watch.pathi}
+                           alt={watch.name + " " + watch.description}
+                         />
+                         <AvatarFallback>
+                           {watch.name[0] +watch.description[0]}
+                         </AvatarFallback>
+                       </Avatar>
                         ) : (
                           <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
                             <span className="text-gray-500 font-medium">{watch.name.charAt(0)}</span>
@@ -65,7 +69,7 @@ export default function WatchList({ watches, onEdit, onDelete }: WatchListProps)
                         Edit
                       </button>
                       <button 
-                        onClick={() => onDelete(watch.name)} 
+                        onClick={() => onDelete(watch.id)} 
                         className="text-red-600 hover:text-red-900"
                       >
                         Delete

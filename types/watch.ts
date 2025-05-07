@@ -3,6 +3,6 @@ export interface Watch {
     pathi: string;
     name: string;
     description: string;
-    serie: string;
+    serie?: string;
     price: number;
   }
